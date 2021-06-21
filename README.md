@@ -2,7 +2,7 @@
 
 # Overview
 
-Repo containing examples for practicing Git & GitHub workflows for internal CO-OPS employees
+Example code for practicing Git & GitHub workflows for internal CO-OPS employees.
 
 For additional information, contact:
 Lindsay Abrams,
