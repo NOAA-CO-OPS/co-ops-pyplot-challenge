@@ -15,6 +15,12 @@ This repository is a scientific product and is not official communication of the
 
 ## Documentation and Code
 
+pyPlotchallenge.ipynb: Pyplot Challenge notebook without answers
+PyPlotchallenge_ans, ans_01, ans_02, ans_03.ipynb: Pyplot Challenge notebooks with answers for practicing Git & GitHub workflow
+pyPlotChallenge_ans.py: Pyplot challenge py file for practicing Git & GitHub workflow
+
+myUtils.py: Functions for pulling and formatting data 
+
 ## License
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. �105). The United States/Department of Commerce reserve all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.
