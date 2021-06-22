@@ -16,7 +16,9 @@ This repository is a scientific product and is not official communication of the
 ## Documentation and Code
 
 pyPlotchallenge.ipynb: Pyplot Challenge notebook without answers
+
 PyPlotchallenge_ans, ans_01, ans_02, ans_03.ipynb: Pyplot Challenge notebooks with answers for practicing Git & GitHub workflow
+
 pyPlotChallenge_ans.py: Pyplot challenge py file for practicing Git & GitHub workflow
 
 myUtils.py: Functions for pulling and formatting data 
