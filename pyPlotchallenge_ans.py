@@ -34,7 +34,7 @@ plt.close()
 axis = dataframe.plot ()
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 plt.close()
 
@@ -42,7 +42,7 @@ plt.close()
 axis = dataframe.plot ()
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks
 axis.set_xticks([],minor=True)
@@ -58,7 +58,7 @@ plt.close()
 axis = dataframe.plot ()
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -78,7 +78,7 @@ plt.close()
 axis = dataframe.plot (grid=True)
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -98,7 +98,7 @@ plt.close()
 axis = dataframe.plot (figsize=(10, 4), grid=True)
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -118,7 +118,7 @@ plt.close()
 axis = dataframe.plot (figsize=(10, 4), grid=True)
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -145,7 +145,7 @@ subframe = dataframe.loc[start:end,:]
 axis = subframe.plot (figsize=(8, 4), grid=True)
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -169,7 +169,7 @@ subframe['datetime'] = subframe.index
 axis = subframe.plot (kind='scatter', figsize=(8, 4), grid=True, x='datetime', y='observed')
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -199,7 +199,7 @@ dataframe = dataframe.merge (pred_df, how='outer', left_index=True, right_index=
 axis = dataframe.plot (figsize=(10, 4), grid=True)
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -220,7 +220,7 @@ plt.close()
 axis = dataframe.plot (figsize=(10, 4), grid=True, alpha=0.8, style=['-', '--'])
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -241,7 +241,7 @@ plt.close()
 axis = dataframe.plot (figsize=(10, 4), grid=True, style=['-', '--'], color=['#d8b365', '#5ab4ac'])
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Observed water level MLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 ## Remove the default x ticks and tick labels
 axis.set_xticks([],minor=True)
@@ -265,7 +265,7 @@ dataframe['residual'] = dataframe.observed - dataframe.predicted
 # Plot 3 data in 3 plots
 axes = dataframe.plot (subplots=True, figsize=(10, 6), grid=True, style=['-', '--'], color=['#d8b365', '#5ab4ac', 'gray'])
 
-axes[0].set_title ('Water level at Santa Monica 9410840')
+axes[0].set_title ('Water level at ' + station)
 is1200 = numpy.logical_and (dataframe.index.hour == 12, dataframe.index.minute == 0)
 xticks = dataframe.index[numpy.where(is1200)]
 xticklabels = [dt.strftime ('%m-%d\n%H:%M') for dt in xticks]
@@ -294,7 +294,7 @@ axis = subframe.plot (ax=axes[0], grid=True, style=['-', '--'], color=['#d8b365'
 
 axis.set_xlabel ("")
 axis.set_ylabel ("Water level\nMLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 axis.set_xticks([],minor=True)
 axis.set_xticklabels([],minor=True)
@@ -326,7 +326,7 @@ axis = dataframe.plot (figsize=(8, 4), secondary_y=['residual'], grid=True,
 
 axis.set_xlabel ("Date time")
 axis.set_ylabel ("Water level\nMLLW [meters]")
-axis.set_title ('Water level at Santa Monica 9410840')
+axis.set_title ('Water level at ' + station)
 
 axis.set_xticks([],minor=True)
 axis.set_xticklabels([],minor=True)
