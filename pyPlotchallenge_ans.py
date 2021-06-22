@@ -16,7 +16,8 @@ import myUtils
 
 #%% get data from a station 
 # Change the station or the date
-station = '9410840'
+#station = '9410840'
+station = '9414290'
 begin_date, end_date = '20200625', '20200701'
 content = myUtils.pull_obs (station, begin_date, end_date)
 
